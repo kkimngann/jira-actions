@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocate
 class LoginPage(
     private val driver: WebDriver
 ) {
-    private val loginFormLocator = By.id("login-form")
+    private val loginFormLocator = By.cssSelector("form[id*=\"login\"]")
 
     fun logIn(
         user: User
